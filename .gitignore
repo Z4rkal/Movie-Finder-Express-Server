@@ -1,2 +1,8 @@
 node_modules
 .vscode
+start-now-movie-finder-data.md
+*.log
+DS_Store
+config.js
+.nowignore
+now.json
