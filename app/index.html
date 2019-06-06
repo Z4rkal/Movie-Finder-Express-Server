@@ -2,23 +2,31 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Movie Finder</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="icon" type="image/png"
+        href="https://cdn1.iconfinder.com/data/icons/flags-of-the-world-2/128/trans-flag-circle-512.png">
 </head>
 
 <body>
-    <div id="head-div">
-        <h1 id="page-head">Movie Finder</h1>
+    <div id='head-div'>
+        <h1 id='page-head'>Movie Finder</h1>
+        <h2 id='page-desc'> : This page searches for movies in Open Movie Database</h2>
     </div>
-    <div id="input-div">
+    <div id='input-div'>
+        <input id='search-field' type='text' placeholder='Search for you desired movie here!' />
+        <select id='search-type-selector'>
+            <option value='?t='>Search by Title</option>
+            <option value='?i='>Search by Id</option>
+        </select>
+        <button id='search-movie'>Search</button>
+    </div>
+    <div id='output-div'>
 
     </div>
-    <div id="output-div">
-        
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="main.js" charset="utf-8"></script>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+    <script src='main.js' charset='utf-8'></script>
 </body>
 
 </html>

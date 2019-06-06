@@ -3,6 +3,7 @@ const chaiHttp = require('chai-http');
 const axios = require('axios');
 const mockAdapter = require('axios-mock-adapter');
 const app = require('../server/app');
+const config = require('../server/config');
 
 // Connect mock adapter
 const mock = new mockAdapter(axios);
@@ -29,21 +30,21 @@ function withMovie(i) {
 
 
 mock
-  .onGet('http://www.omdbapi.com', { params: { i: 'tt3896198', apiKey: '8730e0e' }})
+  .onGet(`http://www.omdbapi.com`, { params: { i: `tt3896198`, apiKey: config.apiKey }})
   .replyOnce(withMovie(0))
-	.onGet('http://www.omdbapi.com/', { params: { i: 'tt3896198', apiKey: '8730e0e' }})
+	.onGet(`http://www.omdbapi.com/`, { params: { i: `tt3896198`, apiKey: config.apiKey }})
   .replyOnce(withMovie(0))
-  .onGet('http://www.omdbapi.com/?i=tt3896198&apikey=8730e0e')
+  .onGet(`http://www.omdbapi.com/?i=tt3896198&apikey=${config.apiKey}`)
   .replyOnce(withMovie(0))
-  .onGet('http://www.omdbapi.com/?apikey=8730e0e&i=tt3896198')
+  .onGet(`http://www.omdbapi.com/?apikey=${config.apiKey}&i=tt3896198`)
   .replyOnce(withMovie(0))
-  .onGet('http://www.omdbapi.com', { params: { t: 'baby driver', apiKey: '8730e0e' }})
+  .onGet(`http://www.omdbapi.com`, { params: { t: `baby driver`, apiKey: config.apiKey }})
   .replyOnce(withMovie(1))
-  .onGet('http://www.omdbapi.com/', { params: { t: 'baby driver', apiKey: '8730e0e' }})
+  .onGet(`http://www.omdbapi.com/`, { params: { t: `baby driver`, apiKey: config.apiKey }})
   .replyOnce(withMovie(1))
-  .onGet('http://www.omdbapi.com/?t=baby%20driver&apikey=8730e0e')
+  .onGet(`http://www.omdbapi.com/?t=baby%20driver&apikey=${config.apiKey}`)
   .replyOnce(withMovie(1))
-  .onGet('http://www.omdbapi.com/?apikey=8730e0e&t=baby%20driver')
+  .onGet(`http://www.omdbapi.com/?apikey=${config.apiKey}&t=baby%20driver`)
   .replyOnce(withMovie(1))
 
 const expect = chai.expect;

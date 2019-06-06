@@ -1,13 +1,13 @@
 {
   "name": "movie-finder-data",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "An express server that serves a web app for searching movies from OMDB",
   "main": "index.js",
   "scripts": {
     "test": "mocha test --exit",
     "start": "node server/index.js"
   },
-  "author": "",
+  "author": "Oliva Reed",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.2",

@@ -1,0 +1,96 @@
+body {
+    margin: 0% 0% auto 0%;
+}
+
+#head-div {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    padding: 0.2em;
+    margin-top: 0%;
+    background: linear-gradient(#f6f6f6,#d4d4d4) border-box;
+    border-bottom: 4px #7b7b7b solid;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#page-head {
+    text-indent: 1em;
+    font-weight: 400;
+}
+
+#page-head, #page-desc{
+    font-family: Arial, Helvetica, sans-serif;
+    display:inline-block;
+    font-style: italic;
+}
+
+#page-desc {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+#input-div {
+    margin: 10px 2.5% 10px 2.5%;
+}
+
+#search-field {
+    width: 185px;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+}
+
+#output-div {
+    background-color: #f0f0f0;
+    border: 1px solid #909090;
+    border-radius: 4px;
+}
+
+#output-first-block {
+    min-height: 450px;
+}
+
+#output-div div#output-text, #output-div div#output-poster {
+    display: inline-block;
+}
+
+#output-plot {
+    display: inline-block;
+}
+
+#output-text {
+    width: 64%;
+}
+
+#output-poster {
+    position: absolute;
+    width: fit-content;
+}
+
+#movie-poster {
+    size: inherit;
+}
+
+.output-h { 
+    margin: 2px auto 2px;
+    font-weight: 350;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.output-p {
+    margin: 4px auto 4px;
+    font-size: 1em;
+    width: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#movie-link {
+    text-decoration: none;
+    background-color: olive;
+    padding: 0.2em;
+    border: 1px solid goldenrod;
+    margin: 0.5em, 0px, 1em, 0px;
+    border-radius: 6px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+}
