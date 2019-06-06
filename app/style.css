@@ -41,30 +41,34 @@ body {
 }
 
 #output-div {
+    line-height: 1.5em;
+}
+
+#output-container-div {
+    display: table;
     background-color: #f0f0f0;
     border: 1px solid #909090;
     border-radius: 4px;
+    padding-bottom: 0.4em;
 }
 
-#output-first-block {
-    min-height: 450px;
+.row {
+    display: table-row;
 }
 
-#output-div div#output-text, #output-div div#output-poster {
-    display: inline-block;
-}
-
-#output-plot {
-    display: inline-block;
+#output-text, #output-poster {
+    display: table-cell;
+    vertical-align: top;
 }
 
 #output-text {
-    width: 64%;
+    padding-left: 0.2em;
 }
 
 #output-poster {
-    position: absolute;
-    width: fit-content;
+    /* position: absolute; */
+    width: min-content;
+    height: min-content;
 }
 
 #movie-poster {
@@ -72,12 +76,12 @@ body {
 }
 
 .output-h { 
-    margin: 2px auto 2px;
+    margin: 8px auto 8px;
     font-weight: 350;
     font-family: Arial, Helvetica, sans-serif;
 }
 .output-p {
-    margin: 4px auto 4px;
+    margin: 8px auto 8px;
     font-size: 1em;
     width: inherit;
     font-family: Arial, Helvetica, sans-serif;
@@ -88,9 +92,14 @@ body {
     background-color: olive;
     padding: 0.2em;
     border: 1px solid goldenrod;
-    margin: 0.5em, 0px, 1em, 0px;
     border-radius: 6px;
     color: white;
     white-space: nowrap;
     overflow: hidden;
+}
+
+#movie-no-link {
+    color: #ff0000;
+    font-style: italic;
+    font-size: 0.9em; 
 }
