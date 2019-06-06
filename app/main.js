@@ -34,20 +34,20 @@ function searchHandler() {
                     <div id='output-text'>
                         <div id='output-head'>
                             <h1 class='output-h' id='movie-title'>${data.Title}</h1>
-                            <p class='output-p' id='Director'><b>Directed by:</b> ${data.Director}</p>
-                            <p class='output-p' id='movie-writers'><b>Writers:</b> ${data.Writer}</p>
-                            <p class='output-p' id='movie-production'><b>Production:</b> ${data.Production}</p>
-                            <p class='output-p' id='movie-clan'><b>Launguage:</b> ${data.Language}, Country: ${data.Country}</p>
-                            <p class='output-p' id='view-rating'><b>Rated:</b> ${data.Rated}</p>
+                            <p class='output-p' id='Director'><span class='label'>Directed by:</span> ${data.Director}</p>
+                            <p class='output-p' id='movie-writers'><span class='label'>Writers:</span> ${data.Writer}</p>
+                            <p class='output-p' id='movie-production'><span class='label'>Production:</span> ${data.Production}</p>
+                            <p class='output-p' id='movie-clan'><span class='label'>Launguage:</span> ${data.Language}, Country: ${data.Country}</p>
+                            <p class='output-p' id='view-rating'><span class='label'>Rated:</span> ${data.Rated}</p>
                         </div>
                         <div id='output-body'>
-                            <p class='output-p' id='movie-year'><b>Release:</b> ${data.Released}, DVD Release: ${data.DVD}</p>
-                            <p class='output-p' id='movie-runtime'><b>Runtime:</b> ${data.Runtime}</p>
-                            <p class='output-p' id='movie-genre'><b>Genre:</b> ${data.Genre}</p>
+                            <p class='output-p' id='movie-year'><span class='label'>Release:</span> ${data.Released}, DVD Release: ${data.DVD}</p>
+                            <p class='output-p' id='movie-runtime'><span class='label'>Runtime:</span> ${data.Runtime}</p>
+                            <p class='output-p' id='movie-genre'><span class='label'>Genre:</span> ${data.Genre}</p>
                             <p class='output-p' id='movie-ratings'>${formatRatings(data.Ratings)}</p>
-                            <p class='output-p' id='movie-awards'><b>Awards:</b> ${data.Awards}</p>
-                            <p class='output-p' id='movie-earnings'><b>Box Office Earnings:</b> ${data.BoxOffice}</p>
-                            <p class='output-p' id='movie-plot'><b>Plot Summary:</b> ${data.Plot}</p>
+                            <p class='output-p' id='movie-awards'><span class='label'>Awards:</span> ${data.Awards}</p>
+                            <p class='output-p' id='movie-earnings'><span class='label'>Box Office Earnings:</span> ${data.BoxOffice}</p>
+                            <p class='output-p' id='movie-plot'><span class='label'>Plot Summary:</span> ${data.Plot}</p>
                             ${checkForLink(data.Website)}
                         </div>
                     </div>
