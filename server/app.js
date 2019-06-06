@@ -11,6 +11,10 @@ var movieId = '';
 var cacheObj = {};
 var curHash = 0;
 
+//There isn't a max cache size currently so if you're 
+//using a free API key like I am then you'll start hitting the daily 
+//limit of 1000 api requests much sooner as the cache starts 
+//approaching 100's of requests just to refresh its entries every day
 function updateCache() {
     console.log('Updating cache');
     //Goes through the cache and updates each entry with data from a fresh axios request to OMDB
