@@ -2,6 +2,9 @@ This project uses an express web server backend to serve a page that can search 
 
 The server caches data that it has already gotten from previous searches so that it doesn't spam the  OMDB API, and if it's left running it will update the contents of the cache once every 24 hours.
 
+A working example of what the project looks like once it's running is located at: 
+`https://node101-movie-finder-data.zarkal.now.sh/`
+
 You can clone this from my github with `git clone git@github.com:Z4rkal/Movie-Finder-Express-Server.git`.
 
 To build it, you'll need NodeJS and Node Package Manager (npm) so that you can run `npm install`, and then you'll need to get an api key from `http://www.omdbapi.com/apikey.aspx` (They give away free API keys with a 1000 daily limit if you're just looking to play around with this project) and create a `config.js` file in the `/server` folder that looks like:
